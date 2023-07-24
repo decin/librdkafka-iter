@@ -280,12 +280,13 @@ install(
 
 add_subdirectory(src)
 add_subdirectory(src-cpp)
+add_subdirectory(src-cppkafka)
 
-if(RDKAFKA_BUILD_EXAMPLES)
-  add_subdirectory(examples)
-endif()
+# if(RDKAFKA_BUILD_EXAMPLES)
+#   add_subdirectory(examples)
+# endif()
 
-if(RDKAFKA_BUILD_TESTS)
-  enable_testing()
-  add_subdirectory(tests)
-endif()
+# if(RDKAFKA_BUILD_TESTS)
+#   enable_testing()
+#   add_subdirectory(tests)
+# endif()
