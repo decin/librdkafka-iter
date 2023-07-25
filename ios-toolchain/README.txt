@@ -1,0 +1,2 @@
+如何使用:
+cmake -DCMAKE_TOOLCHAIN_FILE=../ios-toolchain/iOS.cmake -DCMAKE_IOS_DEVELOPER_ROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer -DCMAKE_IOS_SDK_ROOT=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk -DRDKAFKA_BUILD_STATIC=ON  -GXcode ..

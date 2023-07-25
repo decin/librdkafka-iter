@@ -242,8 +242,8 @@ if(LINK_ATOMIC)
   target_link_libraries(rdkafka PUBLIC "-latomic")
 endif()
 
-find_package(Threads REQUIRED)
-target_link_libraries(rdkafka PUBLIC Threads::Threads)
+# find_package(Threads REQUIRED)
+# target_link_libraries(rdkafka PUBLIC Threads::Threads)
 
 if(WITH_SASL_CYRUS)
   target_include_directories(rdkafka PRIVATE ${SASL_INCLUDE_DIRS})
